@@ -5,7 +5,7 @@
 <h2>Contravvenzioni</h2>
 
 <div class="row">
-    <div class="col-md-2">
+    <div class="col-md-3">
         <button style="width:100%; margin-bottom: 10px;" class="btn btn-danger" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
             <p>  per trasgressore</p>
         </button>
@@ -23,7 +23,7 @@
         </button>
     </div>
 
-    <div class="col-md-10">
+    <div class="col-md-9">
         <div class="row">
             <div class="col-md-12">
 
@@ -72,15 +72,4 @@
         </div>
     </div>
 </div>
-
-<script>
-    $(document).ready(function () {
-        $("#buttonId").click(function () {
-            $.get("/Home/_ContravvenzioniPerTrasgressore", function (data) {
-                $("#divId").html(data);
-            });
-        });
-    });
-
-</script>
 
