@@ -13,6 +13,7 @@ namespace BE_U2_W1_D5.Controllers
 {
     public class HomeController : Controller
     {
+        // GET: Home
         public ActionResult Index()
         {
             return View();
@@ -56,7 +57,7 @@ namespace BE_U2_W1_D5.Controllers
 
             return PartialView("_ContravvenzioniPerTrasgressore", Contravvenzione);
         }
-
+        
         public ActionResult _ContravvenzioniSuperano10Punti()
         {
             List<Contravvenzione> Contravvenzione = new List<Contravvenzione>();
@@ -93,7 +94,7 @@ namespace BE_U2_W1_D5.Controllers
 
             return PartialView("_ContravvenzioniSuperano10Punti", Contravvenzione);
         }
-
+       
         public ActionResult _ContravvenzioniImportoMaggiore400()
         {
             List<Contravvenzione> Contravvenzione = new List<Contravvenzione>();
