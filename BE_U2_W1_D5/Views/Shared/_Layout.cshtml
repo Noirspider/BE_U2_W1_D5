@@ -14,11 +14,11 @@
     <div class="navbar navbar-inverse" style="background-color: #333;">
         <div style="display:flex; align-items: center; justify-content: space-between; padding: 10px;">
             <img src="/Content/img/polizia.png" style="width:150px" class="align-item-left" />
-            <ul class="nav navbar-nav row" style="display: flex;">
-                <li>@Html.ActionLink("Contravvenzioni", "Index", "Home", new { area = "" }, new { @class = "navbar-brand", @style = "color: #fff; text-decoration: none; margin-right: 20px;" })</li>
-                <li>@Html.ActionLink("Trasgressori", "Index", new { controller = "Trasgressore" }, new { @class = "navbar-brand", @style = "color: #fff; text-decoration: none; margin-right: 20px;" })</li>
-                <li>@Html.ActionLink("Verbali", "Index", new { controller = "Verbale" }, new { @class = "navbar-brand", @style = "color: #fff; text-decoration: none; margin-right: 20px;" })</li>
-            </ul>
+           
+                <div>@Html.ActionLink("Contravvenzioni", "Index", "Home", new { area = "" }, new { @class = "navbar-brand", @style = "color: #fff; text-decoration: none; margin-right: 20px;" })</div>
+                <div>@Html.ActionLink("Trasgressori", "Index", new { controller = "Trasgressore" }, new { @class = "navbar-brand", @style = "color: #fff; text-decoration: none; margin-right: 20px;" })</div>
+                <div>@Html.ActionLink("Verbali", "Index", new { controller = "Verbale" }, new { @class = "navbar-brand", @style = "color: #fff; text-decoration: none; margin-right: 20px;" })</div>
+           
         </div>
     </div>
 
