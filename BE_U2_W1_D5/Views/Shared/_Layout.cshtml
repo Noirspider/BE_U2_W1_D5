@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Polizia Municipale</title>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body style="padding: 0px; background-color: #f7f9f8;">
+
+    <div class="navbar navbar-inverse">
+
+
+        <div style="display:flex; align-items: center; justify-content: space-between;">
+
+            <img src="/Content/img/polizia.png" style="width:150px" class="align-item-left" />
+
+            <ul class="nav navbar-nav row flex">
+                <li> @Html.ActionLink("Contravvenzioni", "Index", "Home", new { area = "" }, new { @class = "navbar-brand", @style = "filter: drop-shadow(0px 0px 1px #023381)" })</li>
+                <li>@Html.ActionLink("Trasgressori", "Index", new { controller = "Trasgressore" }, new { @class = "navbar-brand", @style = "filter: drop-shadow(0px 0px 1px #023381)" })</li>
+                <li>@Html.ActionLink("Verbali", "Index", new { controller = "Verbale" }, new { @class = "navbar-brand", @style = "filter: drop-shadow(0px 0px 1px #023381)" })</li>
+            </ul>
+
+        </div>
+
+
+    </div>
+    <div class="container" style="min-height: 80vh;">
+        @RenderBody()
+    </div>
+    <div class="container-fluid text-center" style="margin-top: 20px; padding: 20px; color: white; background-color: black ">
+        <footer>
+            <p>&copy; 2024 - Gianluca Grillo </p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
